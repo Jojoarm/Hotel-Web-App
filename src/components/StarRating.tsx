@@ -12,6 +12,7 @@ const StarRating = ({ rating = 4 }) => {
             }
             alt="star-icon"
             className="w-4.5 h-4.5"
+            key={index}
           />
         ))}
     </>

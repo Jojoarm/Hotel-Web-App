@@ -52,3 +52,7 @@ export type Testimonial = {
   rating: number;
   review: string;
 };
+
+export type AmenityIconMap = {
+  [key: string]: string;
+};
