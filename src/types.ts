@@ -56,3 +56,25 @@ export type Testimonial = {
 export type AmenityIconMap = {
   [key: string]: string;
 };
+
+export type UserBookingData = {
+  _id: string;
+  user: User;
+  room: Room;
+  hotel: Hotel;
+  checkInDate: string;
+  checkOutDate: string;
+  totalPrice: number;
+  guests: number;
+  status: string;
+  paymentMethod: string;
+  isPaid: boolean;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type DashboardData = {
+  totalBookings: number;
+  totalRevenue: number;
+  bookings: UserBookingData[];
+};
